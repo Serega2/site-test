@@ -107,3 +107,62 @@
     background: #80b971;
 }
 /*Шестиугольники*/
+
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+}
+.main-header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid red;
+}
+.logo {
+	width: 25%;
+	display: inline-block;
+}
+.logo a {
+	display: inline-block;
+}
+.logo img {
+	width: 100%;
+	height: 100px;
+}
+nav {
+	width: 27%;
+	display: inline-block;
+}
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+nav ul li a {
+	color: black;
+	text-decoration: none;
+}
+.main-header button {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 8px 20px;
+	border-radius: 5px;
+}
+.header-phone {
+	display: inline-block;
+	width: 25%;
+	padding: 15px;
+	float: right;	
+}
+.header-phone a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.header-phone > p > a > span {
+	color: red;
+}
