@@ -7,25 +7,128 @@
 	<title>Site title</title>
 </head>
 <body>
-	<header>
-		<div class="logo" id="logo">
-			<a href="#logo"><img src="" alt=""></a>
-		</div>
-		<nav>
-			<ul>
-				<li><a href="#">Ссылка</a></li>
-				<li><a href="#">Ссылка</a></li>
-				<li><a href="#">Ссылка</a></li>
-				<li><a href="#">Ссылка</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		
-	</main>	
-	<footer>
-		
-	</footer>
+	<div class="container">
+		<header class="main-header">
+			<div class="logo">
+				<a href="#logo">
+					<img src="" alt="">
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#about">О компании</a>
+					</li>
+					<li>
+						<a href="#services">Услуги</a>
+					</li>
+					<li>
+						<a href="#contacts">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<button>Оставить заявку</button>
+			<div class="header-phone">
+				<span>Телефон, Viber, WhatsApp</span>
+				<p>
+					<a href="tel:+8613539458624">
+						<span class="phone">+86 (135)</span> 394 58 624
+					</a>
+				</p>
+			</div>
+		</header>
+		<main class="main-section">
+			<section id="about">
+				<div class="main-content">
+					<div class="title">
+						<h2>О компании <span>China</span> Opt Trade</h2>
+					</div>
+					<div class="main-content-left">
+						<p>Наша компания занимается закупкой, проверкой упаковкой и отправкой товара.</p>
+						<div class="content-left-section">
+							<b>более <span>4</span> лет</b>
+							<p>Опыт в сфере закупки товара из Китая</p>
+						</div>
+					</div>
+					<div class="main-content-right">
+						<p>Основное направление - закупка мобильных аксессуаров и мелкой электроники</p>
+						<div class="content-right-section">
+							<b>более <span>10</span> лет</b>
+							<p>Опыт в сфере мобильных аксессуаров</p>
+						</div>
+					</div>
+				</div>
+				<div class="order">
+					<h2>Оставить заявку</h2>
+					<p>Оставьте свои данные и мы перезвоним</p>
+					<form action="" method="post">
+						<input type="text" name="user_name" placeholder="Ваше имя..." required>
+						<input type="tel" name="user_phone" placeholder="Телефон..." required>
+						<input type="mail" placeholder="Email..." required>
+						<input type="submit" value="Оставить заявку">
+					</form>
+				</div>
+			</section>
+			<section id="services">
+				<h2>Услуги</h2>
+				<div class="service-item"></div>
+				<div class="service-item"></div>
+				<div class="service-item"></div>
+				<div class="service-item"></div>
+			</section>
+			<section id="contacts">
+				<h2>Контакты</h2>
+				<div class="contact-item-wrap">
+					<div class="contact-item">
+						<figure>
+						    <img src="" alt="">
+						    <figcaption>Телефон, Viber, WhatsApp:</figcaption>
+						    <p>
+						    	<a href="tel:+8613539458624"><span>+86 (135)</span> 394 58 624</a>
+						    </p>
+					   </figure>
+					</div>
+					<div class="contact-item">
+						<figure>
+					    	<img src="" alt="">
+					    	<figcaption>E-mail:</figcaption>
+					    	<p>
+					    		<a href="mail:mail@ukr.net">mail@ukr.net</a>
+					    	</p>
+					   </figure>
+					</div>
+					<div class="contact-item">
+						<figure>
+					    	<img src="" alt="">
+					    	<figcaption>Сайт-партнер:</figcaption>
+					    	<p>
+					    		<a href="#">Link</a>
+					    	</p>
+					   </figure>
+					</div>
+				</div>
+				<div class="barcode-section">
+					<div class="barcode">
+						<div class="barcode-left">
+							<img src="" alt="">
+							<p>Код WeChat</p>
+						</div>
+						<div class="barcode-right">
+							<img src="" alt="">
+						</div>
+					</div>
+				</div>				
+			</section>
+		</main>
+		<footer class="main-footer">
+			<div id="map1">
+				
+			</div>
+			<div id="map2">
+				
+			</div>
+		</footer>
+	</div>
 <script src="js/main.js"></script>	
 </body>
 </html>
