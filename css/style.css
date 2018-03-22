@@ -302,3 +302,12 @@ span.color-decoration, .content-left-section b, .content-right-section b {
 figcaption {
 	margin-top: 15px;
 }
+#map1, #map2 {
+	height: 450px;
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+#map2 {
+	margin-top: 465px;
+}
