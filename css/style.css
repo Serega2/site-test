@@ -1,8 +1,9 @@
 /*Шестиугольники*/
 .hex {
     width:150px;
+    width:145px;
     height:86px;
-    background-color: #ccc;
+    background-color: #d6333e;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: auto 173px;
@@ -11,6 +12,7 @@
     margin:25px 5px;
     text-align:center;
     zoom:1;
+    border-radius: 10px;
 }
 
 .hex.hex-gap {
@@ -31,12 +33,14 @@
     position: absolute;
     top:0;
     left:0;
-    width:100%;
+    /*width:100%;*/
+    width:98%;
     height:100%;
     background: inherit;
     z-index:-2;
     overflow:hidden;
     backface-visibility: hidden;
+    border-radius: 10px;
 }
 
 .hex .corner-1 {
@@ -71,8 +75,7 @@
 .hex .corner-2:before {
     transform: rotate(60deg) translate(-48px, -11px);
     bottom:0;
-}        
-
+}      
 /* Custom styles*/
 .hex .inner {
     color:#eee;
@@ -96,6 +99,9 @@
     width:80%;
     margin:0 auto;
 }
+.hex p img {
+	margin-top: 10px;
+}
 .hex.hex-1 {
     background: #74cddb;
 }
@@ -108,7 +114,16 @@
 }
 /*Шестиугольники*/
 
-
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+h2 {
+	text-align: center;
+	font-size: 48px;
+	font-weight: 700;
+	margin-top: 68px;
+	margin-bottom: 40px;
+}
 .container {
 	width: 85%;
 	margin: 0 auto;
@@ -116,7 +131,14 @@
 .main-header {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid red;
+	display: inline-block;
+	width: 100%;
+}
+.line {
+	border-bottom: 1px solid #d6333e;
+	position: absolute;
+	left: 0;
+	width: 100%;
 }
 .logo {
 	width: 25%;
@@ -132,6 +154,8 @@
 nav {
 	width: 27%;
 	display: inline-block;
+	vertical-align: top;
+	margin-top: 25px;
 }
 nav ul li {
 	list-style: none;
@@ -143,13 +167,16 @@ nav ul li {
 nav ul li a {
 	color: black;
 	text-decoration: none;
+	font-size: 18px;
 }
 .main-header button {
-	background-color: red;
+	background-color: #d6333e;
 	color: white;
 	border: none;
-	padding: 8px 20px;
+	padding: 14px 23px;
 	border-radius: 5px;
+	vertical-align: top;
+    margin: 35px;
 }
 .header-phone {
 	display: inline-block;
@@ -157,12 +184,121 @@ nav ul li a {
 	padding: 15px;
 	float: right;	
 }
+.header-phone {
+	font-size: 16px;
+}
 .header-phone a {
 	color: black;
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 24px!important;	
+	font-weight: 700;
 }
-.header-phone > p > a > span {
-	color: red;
+span.color-decoration, .content-left-section b, .content-right-section b {
+	color: #d6333e;
+}
+.content-left-section span, .content-right-section span {
+	font-size: 70px;
+}
+.title h2 {
+	text-align: center;
+	font-size: 48px;
+	font-weight: 700;
+	margin-top: 68px;
+	margin-bottom: 40px;
+}
+.title p {
+	font-size: 18px;
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 28px;
+}
+.main-content-container {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35px;
+}
+.main-content-left, .main-content-right {
+	display: inline-block;
+	width: 370px;
+	text-align: center;
+	padding-top: 36px;
+	padding-bottom: 36px;
+	background-color: #f5f5f5;
+}
+.main-content-left b, .main-content-right b {
+	font-size: 20px;
+}
+.main-content-left p, .main-content-right p {
+	width: 190px;
+	line-height: 28px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main-content-left {
+	margin-right: 30px;
+}
+.services-bg {
+	background-color: #f5f5f5;
+	margin-top: 70px;
+	position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: -2;
+    min-height: 465px;
+    margin-bottom: 450px;
+}
+#services h2 {
+	margin-bottom: 55px;
+}
+.services-container {
+	width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    min-height: 290px;    
+}
+#services {
+	padding-top: 35px;
+}
+.service-item {
+	width: 155px;
+	height: 225px;
+	float: left;
+	margin-left: 90px;
+	position: relative;
+}
+.service-item:first-child {
+	margin-left: 28px;
+}
+.hex + p {
+	position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+.contact-item-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+.contact-item {
+	justify-content: space-around;
+	width: 25%;
+	display: flex;
+	text-align: center;
+}
+.contact-item a {	
+	color: #d6333e;
+}
+.contact-item:first-child a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+figcaption {
+	margin-top: 15px;
 }
