@@ -291,6 +291,9 @@ span.color-decoration, .content-left-section b, .content-right-section b {
 .contact-item-wrap {
 	display: flex;
 	flex-wrap: wrap;
+	width: 84%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .contact-item {
 	justify-content: space-around;
