@@ -155,7 +155,11 @@ nav {
 	width: 27%;
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 25px;
+	margin-top: 40px;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
 }
 nav ul li {
 	list-style: none;
@@ -281,6 +285,9 @@ span.color-decoration, .content-left-section b, .content-right-section b {
     font-size: 19px;
     font-weight: bold;
 }
+#contacts {
+	margin-bottom: 65px;
+}
 .contact-item-wrap {
 	display: flex;
 	flex-wrap: wrap;
@@ -302,6 +309,9 @@ span.color-decoration, .content-left-section b, .content-right-section b {
 figcaption {
 	margin-top: 15px;
 }
+figure {
+	margin-bottom: 45px;
+}
 #map1, #map2 {
 	height: 450px;
 	position: absolute;
@@ -310,4 +320,71 @@ figcaption {
 }
 #map2 {
 	margin-top: 465px;
+}
+.order {
+	width: 80%;
+	margin: 0 auto;
+	padding: 15px;
+	box-shadow: 0 0 15px rgba(51, 51, 51, 0.14);
+	border-radius: 5px;  
+}
+.order h3 {
+	font-size: 30px;
+}
+.order input[type="text"], .order input[type="tel"], .order input[type="mail"] {
+	width: 29%;
+	margin-right: 20px;
+	height: 40px;
+	padding-left: 20px;
+	margin-bottom: 15px;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	color: #e0e0e0;
+}
+.order input[type="mail"] {
+	margin-right: 0px;
+}
+textarea {
+	margin-left: 20px;
+	width: 97%;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.order input[type="submit"] {
+	text-align: right;
+	background-color: #d6333e;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	float: right;
+	border: none;
+	border-radius: 5px;
+	padding: 15px 60px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}    
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 1365px) {
+	.header-phone {
+		width: 21%;
+	}
+	.main-header button {
+		margin: 28px;
+	}
+	.main-content-container {
+		width: 68%;
+	}
+	.services-container {
+		width: 100%;
+	}
+	.service-item {
+		margin-left: 77px;
+	}
 }
