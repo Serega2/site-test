@@ -55,7 +55,7 @@ nav ul li {
 nav ul li a {
 	color: black;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 1em;
 }
 .main-header button {
 	background-color: #d6333e;
@@ -64,7 +64,9 @@ nav ul li a {
 	padding: 14px 23px;
 	border-radius: 5px;
 	vertical-align: top;
-    margin: 25px;
+    width: 19%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .header-phone {
 	display: inline-block;
@@ -86,7 +88,7 @@ span.color-decoration, .content-left-section b, .content-right-section b {
 	color: #d6333e;
 }
 .content-left-section span, .content-right-section span {
-	font-size: 70px;
+	font-size: 100pt;
 }
 .title h2 {
 	text-align: center;
@@ -159,6 +161,12 @@ span.color-decoration, .content-left-section b, .content-right-section b {
 	margin-left: 5%;
 	position: relative;
 }
+.service-item p {
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+}
 .service-item:first-child {
 	margin-left: 28px;
 }
@@ -169,7 +177,7 @@ span.color-decoration, .content-left-section b, .content-right-section b {
     font-size: 19px;
     font-weight: bold;
 }
-#contacts {
+#contacts, #contacts h2 {
 	margin-bottom: 65px;
 }
 .contact-item-wrap {
@@ -178,6 +186,7 @@ span.color-decoration, .content-left-section b, .content-right-section b {
 	width: 84%;
 	margin-left: auto;
 	margin-right: auto;
+    margin-bottom: 35px;    
 }
 .contact-item {
 	justify-content: space-around;
@@ -185,8 +194,15 @@ span.color-decoration, .content-left-section b, .content-right-section b {
 	display: flex;
 	text-align: center;
 }
+.contact-item figure {
+    margin: 0;
+}
+.contact-item figure img {
+    min-height: 46px;
+}
 .contact-item a {	
 	color: #d6333e;
+    font-weight: bold;
 }
 .contact-item:first-child a {
 	color: black;
@@ -263,7 +279,6 @@ textarea {
 	width: 300px; 
 	height: 300px; 
 	border-radius: 5px;
-	border: 3px #000 solid;
 	background: #fff;
 	position: fixed; 
 	top: 45%;
@@ -279,14 +294,34 @@ textarea {
 	width: 21px;
 	height: 21px;
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 30px;
+	right: 20px;
 	cursor: pointer;
 	display: block;
 }
-#modal_form img {
+#modal_close span {
     width: 100%;
+    background-color: #e0e0e0;
+    height: 1px;
+    display: block;
+    position: absolute;
+}
+#modal_close .first {
+    transform: rotate(45deg);
+}
+#modal_close .second {
+    transform: rotate(-45deg);
+}
+#modal_form p {
+    font-weight: bold;
+    padding-left: 45px;
+}
+#modal_form img {
+    width: 66%;
     height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
 }
 #overlay {
 	z-index:3; 
@@ -306,9 +341,9 @@ textarea {
 	.header-phone {
 		width: 21%;
 	}
-	.main-header button {
+	/*.main-header button {
 		margin: 28px;
-	}
+	}*/
 	.main-content-container {
 		width: 68%;
 	}
@@ -318,6 +353,41 @@ textarea {
 	.service-item {
 		margin-left: 77px;
 	}
+    .header-phone a {
+        font-size: 1.3em!important;
+    }
+}
+@media (max-width: 1250px) {
+    nav ul li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+@media (max-width: 1150px) {
+    .logo {
+        width: 31%;    
+    }
+    nav {
+        width: 36%;
+        text-align: center;
+    }
+    .main-header button {
+        width: 27%;
+        margin-top: 26px;
+        margin-bottom: 2px;
+        float: right;
+    }
+    .header-phone {       
+        width: 25%;
+        padding: 0px;
+        float: right;
+    }
+    .service-item p img {
+        width: 100%;
+    }
+    .service-item {
+        margin-left: 5%;
+    }
 }
 @media (max-width: 960px) {
     .main-content-container{
@@ -333,6 +403,71 @@ textarea {
     .order input[type="submit"] {
         padding-right: 35px;
         padding-left: 35px;
+    }
+    .services-bg {
+        min-height: 470px;
+    }
+    .header-phone {
+        font-size: 12px;
+    }
+    .service-item p img {
+        width: 100%;
+    }
+    .service-item {
+        margin-left: 5%;
+    }
+}
+@media (max-width: 825px){
+    .logo {
+        width: 42%;
+        display: block;
+        margin: 0 auto;
+    }
+    nav {
+        width: 20%;
+        display: block;
+        margin: 0 auto;
+    }
+    .main-header button {
+        width: 50%;
+        margin-top: 26px;
+        margin-bottom: 2px;
+        float: none;
+        display: block;
+        margin: 15px auto;        
+    }
+    .header-phone {
+        width: 38%;
+        padding: 0px;
+        float: none;
+        display: block;
+        margin: 0px auto;
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px){
+    .service-item {
+        width: 22%;
+        margin-left: 13%;
+    }
+    .service-item p {
+        font-size: 12px;
+    }
+    .services-bg {
+        min-height: 610px;
+    }
+    .contact-item {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .order input[type="text"], .order input[type="tel"], .order input[type="mail"], textarea, .order input[type="submit"] {
+        width: 100%;
+    }
+    .order input[type="submit"], .order h3, .order p {
+        text-align: center;    
+    }
+    .main-header button {
+        width: 80%;
     }
 }
 @media (max-width: 600px){
@@ -358,9 +493,14 @@ textarea {
         width: 45%;
         margin-left: 5%;
     }
-    .service-item:last-child {
-        margin-right: auto;
-        margin-left: auto;;
+    .service-item {
+        margin-top: 18px;
+    }
+    .services-bg {
+        min-height: 890px;
+    }
+    #modal_form {
+        left: 46%;
     }
     .header-phone {
         width: 90%;
